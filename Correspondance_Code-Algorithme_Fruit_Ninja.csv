@@ -1,0 +1,15 @@
+Étape Algorithme,Section du Code,Description
+Importer les bibliothèques,"import pygame, random, math, sys","Charge les modules nécessaires pour les graphismes, l'audio et la logique du jeu."
+Initialiser Pygame,pygame.init(),Initialise Pygame pour gérer les graphismes et les entrées utilisateur.
+Configurer la fenêtre et les ressources,"pygame.display.set_mode(), load_image(), load_sound()","Crée la fenêtre de jeu et charge les ressources nécessaires (images, sons, polices)."
+Menu Principal,main_menu(),"Affiche les options du menu principal et permet de choisir entre jouer, changer les paramètres ou quitter."
+Charger les ressources,"load_and_resize_image(), pygame.mixer.Sound()",Charge et redimensionne les images et les sons pour une meilleure compatibilité.
+Démarrer le jeu,game_loop(),Lance la boucle principale et initialise les variables de jeu.
+Boucle du jeu,while running: ... (boucle principale),"Gère l'affichage, la mise à jour des objets et la détection des événements."
+Détection de collisions,line_circle_intersect(),Détecte si un swipe touche un fruit ou un autre objet via une intersection ligne-cercle.
+Calcul du score et combos,"combo_points(), start_combo()",Calcule les points en fonction des combos réalisés et met à jour le score.
+Gestion des bombes et objets spéciaux,if obj.is_bomb: game_over_screen(),Gère les conséquences de la tranche d'une bombe ou d'un objet spécial.
+Affichage des effets visuels,SlashFX(),Affiche les effets de coupe et les animations visuelles.
+Sauvegarde des scores,save_score(),Enregistre les scores des joueurs pour conserver les meilleures performances.
+Afficher le score final,"draw_text(score, FONT, WHITE, x, y)",Affiche le score final et le message de fin de partie.
+Quitter le jeu,pygame.quit(),Ferme proprement Pygame et quitte le programme.
